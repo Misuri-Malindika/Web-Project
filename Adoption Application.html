@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<!-- saved from url=(0113)file:///C:/Users/LENOVO/Downloads/Web-Project-main/Web-Project-main/Pick%20your%20Pet/Adoption%20Application.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="stylesheet" type="text/css" href="file:///C|/Users/LENOVO/Downloads/APP_files/bootstrap.css">
+  <link href="file:///C|/Users/LENOVO/Downloads/APP_files/css" rel="stylesheet">
+  <link href="file:///C|/Users/LENOVO/Downloads/APP_files/style.css" rel="stylesheet">
+  <link href="file:///C|/Users/LENOVO/Downloads/APP_files/responsive.css" rel="stylesheet">
+
+  <title>Pick your Pet</title>
+
+</head>
+
+	<body class="sub_page">
+  <div class="hero_area ">
+    <!-- header section strats -->
+	  <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container">
+          <a class="navbar-brand" href="index.html">
+            <img src="file:///C|/Users/LENOVO/Downloads/APP_files/logo.png" alt="">
+          </a>
+          <div class="" id="">
+
+            <div class="custom_menu-btn">
+              <button onclick="openNav()">
+                <span class="s-1">
+
+                </span>
+                <span class="s-2">
+
+                </span>
+                <span class="s-3">
+
+                </span>
+              </button>
+            </div>
+            <div id="myNav" class="overlay">
+              <div class="overlay-content">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="Pet Listings.html">Pet Listings</a>
+                <a href="Pet Details.html">Pet Details</a>
+                <a href="Adoption Application.html">Adoption Application</a>
+                <a href="Success Stories.html">Success Stories</a>
+                <a href="contact.html">Contact Us</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+	<style>
+        label {
+            display: inline-block;
+            width: 500px;
+            margin-bottom: 10px;
+        }
+
+        input, select, textarea {
+            width: 100%;
+        }
+
+        h2 {
+            margin-top: 20px;
+        }
+    </style>
+
+	
+		<div class="container"></div>
+		<div class="detail-box"></div>
+        <div class="heading_container">
+			<h2></h2>
+       <!-- end header section -->
+  </div>
+	
+	
+<!--adoption application-->
+		<h2>
+			            PET ADOPTION APPLICATION
+          </h2>
+        </header></div>
+                    			<br>
+
+
+	      
+	<form action="submit_adoption_application.php" method="post"> 
+	<!-- Adopter Information -->
+        <h2>Adopter Information</h2>
+		
+	    <style>
+    /* CSS to make the label wrap its content */
+    .long-label {
+        display: block;
+        width: 50px; /* Set the width to your desired value */
+        white-space: normal;
+    }
+</style>
+
+<!-- Your content will go here -->
+
+        <label for="adopter_first_name" style="">First Name:</label><br>
+        <input type="text" id="adopter_first_name" name="adopter_first_name" required=""><br><br>
+		
+    
+        <label for="adopter_last_name">Last Name:</label><br>
+        <input type="text" id="adopter_last_name" name="adopter_last_name" required=""><br><br>
+
+        <label for="adopter_address">Address:</label><br>
+        <textarea id="adopter_address" name="adopter_address" rows="3" required=""></textarea><br><br>
+
+        <label for="adopter_email">Email:</label><br>
+        <input type="email" id="adopter_email" name="adopter_email" required=""><br><br>
+
+        <label for="adopter_phone">Phone:</label><br>
+        <input type="tel" id="adopter_phone" name="adopter_phone" required=""><br><br>
+
+        <!-- Pet Information -->
+        <h2>Animal Information</h2>
+        <label for="pet_name">Pet Name:</label><br>
+        <input type="text" id="pet_name" name="pet_name" required=""><br><br>
+
+        <label for="pet_species">Species:</label><br>
+        <input type="text" id="pet_species" name="pet_species" required=""><br><br>
+
+        <label for="pet_breed">Breed:</label><br>
+        <input type="text" id="pet_breed" name="pet_breed" required=""><br><br>
+
+        <label for="pet_sex">Sex:</label><br>
+        <input type="radio" id="male" name="pet_sex" value="male" required="">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="pet_sex" value="female" required="">
+        <label for="female">Female</label><br><br>
+		
+		<label for="any_pets">Do you have any pets?</label><br>
+        <input type="radio" id="yes" name="any_pets" value="yes" required="">
+        <label for="yes">yes</label><br>
+        <input type="radio" id="no" name="any_pets" value="no" required="">
+        <label for="no">no</label><br><br>
+
+        <label for="pet_age">Age:</label><br>
+        <input type="number" id="pet_age" name="pet_age" required=""><br><br>
+
+        <label for="pet_description">Description:</label><br>
+        <textarea id="pet_description" name="pet_description" rows="5" required=""></textarea><br><br>
+
+        <!-- Adopter's Signature -->
+		<section class="adopter&#39;s signature layout_padding">
+			</section>
+    <div class="container">
+      <div class="detail-box">
+        <div class="heading_container">
+          <h2>
+          </h2>
+        </div>
+		  </div>
+		</div>
+       <h2>Adopter's Signature</h2>
+        <label for="signature_first_name">First Name:</label>
+        <input type="text" id="signature_first_name" name="signature_first_name" required="">
+        <label for="signature_last_name">Last Name:</label>
+        <input type="text" id="signature_last_name" name="signature_last_name" required=""><br><br>
+
+        <label for="signature_date">Date:</label>
+        <input type="date" id="signature_date" name="signature_date" required=""><br><br>
+
+        <label for="signature">Signature:</label><br>
+        <input type="text" id="signature" name="signature" required=""><br><br>
+
+        <input type="submit" value="Submit Application"><br><br><br>
+    		  </form>
+ <section class="info_section ">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-lg-3">
+          <div class="info_contact">
+            <h5>
+              CONTACT INFO
+            </h5>
+            <div>
+              <img src="file:///C|/Users/LENOVO/Downloads/APP_files/call.png" alt="">
+              <p>
+                +94 000000000
+              </p>
+            </div>
+            <div>
+              <img src="images/mail.png" alt="">
+              <p>
+                pickyourpet@gmail.com
+              </p>
+            </div>
+          </div>
+        </div>
+        
+
+        <div class="col-md-6 col-lg-3">
+          <div class="info_social">
+            <h5>
+              social media
+            </h5>
+            <div class="social_container">
+              <div>
+                <a href="Adoption Application.html">
+                  <img src="file:///C|/Users/LENOVO/Downloads/APP_files/fb.png" alt="">
+                </a>
+              </div>
+              <div>
+                <a href="Adoption Application.html">
+                  <img src="file:///C|/Users/LENOVO/Downloads/APP_files/twitter.png" alt="">
+                </a>
+              </div>
+              <div>
+                <a href="Adoption Application.html">
+                  <img src="file:///C|/Users/LENOVO/Downloads/APP_files/linkedin.png" alt="">
+                </a>
+              </div>
+              <div>
+                <a href="Adoption Application.html">
+                  <img src="file:///C|/Users/LENOVO/Downloads/APP_files/instagram.png" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+      </div>
+    </div>
+  </section>
+
+  <!-- end info_section -->
+
+
+  <script type="text/javascript" src="file:///C|/Users/LENOVO/Downloads/APP_files/jquery-3.4.1.min.js.download"></script>
+  <script type="text/javascript" src="file:///C|/Users/LENOVO/Downloads/APP_files/bootstrap.js.download"></script>
+  <script>
+    function openNav() {
+      document.getElementById("myNav").classList.toggle("menu_width")
+      document.querySelector(".custom_menu-btn").classList.toggle("menu_btn-style")
+    }
+  </script>
+
+
+		</body></html>
