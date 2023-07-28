@@ -13,6 +13,7 @@
   <link href="css/style.css" rel="stylesheet" />
   <link href="css/responsive.css" rel="stylesheet" />
 
+
   <title>Pick your Pet</title>
 
 </head>
@@ -59,137 +60,63 @@
     <!-- end header section -->
   </div>
 
-	<style>
-        label {
-            display: inline-block;
-            width: 500px;
-            margin-bottom: 10px;
-        }
+  <!-- Adoption Application Form -->
 
-        input, select, textarea {
-            width: 100%;
-        }
-
-        h2 {
-            margin-top: 20px;
-        }
-    </style>
-
-	
-		<div class="container"></div>
-		<div class="detail-box"></div>
-        <div class="heading_container">
-			<h2></h2>
-       <!-- end header section -->
-  </div>
-	
-	
-<!--adoption application-->
-		<h2>
-			            PET ADOPTION APPLICATION
-          </h2>
-        </header></div>
-                    			<br>
-
-    <img src="images/client.png" width="340" height="239" alt=""/><img src="images/client 2.png" width="340" height="239" alt=""/><img src="images/client 3.png" width="340" height="239" alt=""/>
-<form action="submit_adoption_application.php" method="post"> 
-  <!-- Adopter Information -->
-  <h2>Adopter Information</h2>
-		
-	    <style>
+  <h1>Adoption Application Form</h1>
+  <p>Please fill out the form below. You will receive a email with details.</p>
+  
+  
+  <form action="PHP/submit_application.php" method="post">
+    <table>
+      <tr>
+        <td><label for="name">Your Name:</label></td>
+        <td><input type="text" id="name" name="name" required></td>
+      </tr>
+      <tr>
+        <td><label for="email">Email:</label></td>
+        <td><input type="email" id="email" name="email" required></td>
+      </tr>
+      <tr>
+      <td><label for="phone">Phone Number:</label></td>
+      <td><input type="tel" id="phone" name="phone" required></td>
+      </tr>
+      <tr>
+        <td><label for="address">Address:</label></td>
+        <td><input type="text" id="address" name="address" required></td>
+      </tr>
+      <tr>
+        <td><label for="city">City:</label></td>
+        <td><input type="text" id="city" name="city" required></td>
+      </tr>
+      <tr>
+        <td><label for="Pet_Code">Pet Code:</label></td>
+        <td><input type="text" id="city" name="city" required></td>
+      </tr>
+      <tr>
+        <td><label for="experience">Experience with Pets:</label></td>
+          <td><textarea id="experience" name="experience" rows="4" ></textarea></td>
+      </tr>
     
-    .long-label {
-        display: block;
-        width: 50px; 
-        white-space: normal;
-    }
-</style>
+      <tr>
+      <label for="pickup">
+        <td></td>
+        <td><input type="checkbox" id="pickup" name="pickup" required>
+        I will pick up from the shop. </td>
+      </label>
+      </tr>
+      <tr>
+      <label for="agreement">
+        <td></td>
+        <td><input type="checkbox" id="agreement" name="agreement" required>
+          I agree to provide a loving and safe home for the pet. </td>
+      </label>
+      </tr>
+      <tr>
+      <td><input type="submit" value="Submit Application"></td> </tr>
+    </table>
+  </form>
 
-<!-- Your content will go here -->
-
-        <label for="adopter_first_name" style="">First Name:</label><br>
-        <input type="text" id="adopter_first_name" name="adopter_first_name" required=""><br><br>
-		
-    
-        <label for="adopter_last_name">Last Name:</label><br>
-        <input type="text" id="adopter_last_name" name="adopter_last_name" required=""><br><br>
-
-        <label for="adopter_address">Address:</label><br>
-        <textarea id="adopter_address" name="adopter_address" rows="3" required=""></textarea><br><br>
-
-        <label for="adopter_email">Email:</label><br>
-        <input type="email" id="adopter_email" name="adopter_email" required=""><br><br>
-
-        <label for="adopter_phone">Phone:</label><br>
-        <input type="tel" id="adopter_phone" name="adopter_phone" required=""><br><br>
-
-        <!-- Pet Information -->
-        <h2>Animal Information</h2>
-        <label for="pet_name">Pet Name:</label><br>
-        <input type="text" id="pet_name" name="pet_name" required=""><br><br>
-
-        <label for="pet_species">Species:</label><br>
-        <input type="text" id="pet_species" name="pet_species" required=""><br><br>
-
-        <label for="pet_breed">Breed:</label><br>
-        <input type="text" id="pet_breed" name="pet_breed" required=""><br><br>
-
-        <label for="pet_sex">Sex:</label><br>
-        <input type="radio" id="male" name="pet_sex" value="male" required="">
-        <label for="male">Male</label><br>
-        <input type="radio" id="female" name="pet_sex" value="female" required="">
-        <label for="female">Female</label><br><br>
-		
-		<label for="any_pets">Do you have any pets?</label><br>
-        <input type="radio" id="yes" name="any_pets" value="yes" required="">
-        <label for="yes">yes</label><br>
-        <input type="radio" id="no" name="any_pets" value="no" required="">
-        <label for="no">no</label><br><br>
-
-        <label for="pet_age">Age:</label><br>
-        <input type="number" id="pet_age" name="pet_age" required=""><br><br>
-
-        <label for="pet_description">Description:</label><br>
-        <textarea id="pet_description" name="pet_description" rows="5" required=""></textarea><br><br>
-
-        <!-- Adopter's Signature -->
-		<section class="adopter&#39;s signature layout_padding">
-			</section>
-    <div class="container">
-      <div class="detail-box">
-        <div class="heading_container">
-          <h2>
-          </h2>
-        </div>
-		  </div>
-		</div>
-       <h2>Adopter's Signature</h2>
-        <label for="signature_first_name">First Name:</label>
-        <input type="text" id="signature_first_name" name="signature_first_name" required="">
-        <label for="signature_last_name">Last Name:</label>
-        <input type="text" id="signature_last_name" name="signature_last_name" required=""><br><br>
-
-        <label for="signature_date">Date:</label>
-        <input type="date" id="signature_date" name="signature_date" required=""><br><br>
-
-        <label for="signature">Signature:</label><br>
-        <input type="text" id="signature" name="signature" required=""><br><br>
-
-        <input type="submit" value="Submit Application"><br><br><br>
-    		  </form>
-		<p><a href="https://www.nsbm.ac.lk">Visite for more</a></p>
-
-
-
-
-
-
-
-
-
-
-
-
+  <!-- END Adoption Application Form -->
 
   <!-- info section -->
   <section class="info_section ">
