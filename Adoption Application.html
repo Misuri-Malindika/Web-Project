@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Poppins:400,700&display=swap" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet" />
+  <link href="css/responsive.css" rel="stylesheet" />
+
+  <title>Pick your Pet</title>
+
+</head>
+
+<body class="sub_page">
+  <div class="hero_area ">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/logo.png" alt="">
+          </a>
+          <div class="" id="">
+
+            <div class="custom_menu-btn">
+              <button onclick="openNav()">
+                <span class="s-1">
+
+                </span>
+                <span class="s-2">
+
+                </span>
+                <span class="s-3">
+
+                </span>
+              </button>
+            </div>
+            <div id="myNav" class="overlay">
+              <div class="overlay-content">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="Pet Listings.html">Pet Listings</a>
+                <a href="Pet Details.html">Pet Details</a>
+                <a href="Adoption Application.html">Adoption Application</a>
+                <a href="Success Stories.html">Success Stories</a>
+                <a href="contact.html">Contact Us</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+  </div>
+
+  <!-- Adoption Application Form -->
+
+  <h1>Adoption Application Form</h1>
+  <p>Please fill out the form below. You will receive a email with details.</p>
+  
+  
+  <form action="application.php" method="post">
+    <table>
+      <tr>
+        <td><label for="name">Your Name:</label></td>
+        <td><input type="text" id="name" name="name" required></td>
+      </tr>
+      <tr>
+        <td><label for="email">Email:</label></td>
+        <td><input type="email" id="email" name="email" required></td>
+      </tr>
+      <tr>
+      <td><label for="phone">Phone Number:</label></td>
+      <td><input type="tel" id="phone" name="phone" required></td>
+      </tr>
+      <tr>
+        <td><label for="address">Address:</label></td>
+        <td><input type="text" id="address" name="address" required></td>
+      </tr>
+      <tr>
+        <td><label for="city">City:</label></td>
+        <td><input type="text" id="city" name="city" required></td>
+      </tr>
+      <tr>
+        <td><label for="Pet_Code">Pet Code:</label></td>
+        <td><input type="text" id="pet code" name="city" required></td>
+      </tr>
+      <tr>
+        <td><label for="experience">Experience with Pets:</label></td>
+          <td><textarea id="experience" name="experience" rows="4" ></textarea></td>
+      </tr>
+    
+      <tr>
+      <label for="pickup">
+        <td></td>
+        <td><input type="checkbox" id="pickup" name="pickup" required>
+        I will pick up from the shop. </td>
+      </label>
+      </tr>
+      <tr>
+      <label for="agreement">
+        <td></td>
+        <td><input type="checkbox" id="agreement" name="agreement" required>
+          I agree to provide a loving and safe home for the pet. </td>
+      </label>
+      </tr>
+      <tr>
+      <td><input type="submit" value="Submit Application"></td> </tr>
+    </table>
+  </form>
+
+  <!-- END Adoption Application Form -->
+
+  <!-- info section -->
+  <section class="info_section ">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-lg-3">
+          <div class="info_contact">
+            <h5>
+              CONTACT INFO
+            </h5>
+            <div>
+              <img src="images/call.png" alt="" />
+              <p>
+                +94 000000000
+              </p>
+            </div>
+            <div>
+              <img src="images/mail.png" alt="" />
+              <p>
+                pickyourpet@gmail.com
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-6 col-lg-3">
+          <div class="info_social">
+            <h5>
+              social media
+            </h5>
+            <div class="social_container">
+              <div>
+                <a href="">
+                  <img src="images/fb.png" alt="" />
+                </a>
+              </div>
+              <div>
+                <a href="">
+                  <img src="images/twitter.png" alt="" />
+                </a>
+              </div>
+              <div>
+                <a href="">
+                  <img src="images/linkedin.png" alt="" />
+                </a>
+              </div>
+              <div>
+                <a href="">
+                  <img src="images/instagram.png" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- end info_section -->
+
+
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script>
+    function openNav() {
+      document.getElementById("myNav").classList.toggle("menu_width")
+      document.querySelector(".custom_menu-btn").classList.toggle("menu_btn-style")
+    }
+  </script>
+
+</body>
+
+</html>
+<!-- saved from url=(0113)file:///C:/Users/LENOVO/Downloads/Web-Project-main/Web-Project-main/Pick%20your%20Pet/Adoption%20Application.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="stylesheet" type="text/css" href="file:///C|/Users/LENOVO/Downloads/APP_files/bootstrap.css">
+  <link href="file:///C|/Users/LENOVO/Downloads/APP_files/css" rel="stylesheet">
+  <link href="file:///C|/Users/LENOVO/Downloads/APP_files/style.css" rel="stylesheet">
+  <link href="file:///C|/Users/LENOVO/Downloads/APP_files/responsive.css" rel="stylesheet">
+
+ 	
+	    <style>
+    /* CSS to make the label wrap its content */
+    .long-label {
+        display: block;
+        width: 50px; /* Set the width to your desired value */
+        white-space: normal;
+    }
+</style>
+
+	</head>
+</html>
