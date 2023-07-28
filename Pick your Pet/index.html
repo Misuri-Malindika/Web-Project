@@ -55,7 +55,7 @@
               <!-- Login Form Popup -->
               <div id="login-form" class="login-form-overlay">
                 <div class="login-form">
-                  <form action="backend.php" method="post">
+                  <form action="PHP/login.php" method="post">
                     <input type="text" name="username" class="username" placeholder="Username"/> <br><br>
                     <input type="password" name="password" class="password " placeholder="password"/> <br>
                     <input class="btn login" type="submit" value="Login" />
@@ -66,7 +66,7 @@
               <!-- Reg Form Popup -->
               <div id="register-form" class="register-form-overlay">
                 <div class="register-form">
-                  <form>
+                  <form action="PHP/register.php" method="post">
                     <input type="text" name="username" class="username" placeholder="Username"/> <br><br>
                     <input type="email" name="email" class="email" placeholder="email"/> <br><br>
                     <input type="password" name="password" class="password " placeholder="password"/> <br><br>
@@ -414,6 +414,15 @@
     function openNav() {
       document.getElementById("myNav").classList.toggle("menu_width")
       document.querySelector(".custom_menu-btn").classList.toggle("menu_btn-style")
+    }
+  </script>
+   <script>
+    function showLogin() {
+      document.getElementById("login-form").style.display = "block";
+    }
+
+    function showRegister() {
+      document.getElementById("register-form").style.display = "block";
     }
   </script>
 
