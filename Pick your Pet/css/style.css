@@ -696,6 +696,40 @@ a:focus {
 }
 
 
+.card.col-md-12 .card-body .btn.btn-primary {
+    background-color: #014E62;
+}
+.card.col-md-12 .card-body .btn.btn-primary {
+    background-color: #000000;
+    color: #F4CB0B;
+}
+.card.col-md-4.col-lg-12 .card-body .btn.btn-primary {
+    background-color: #000000;
+    color: #FAC909;
+}
+.sub_page h3 b {
+    color: #014E62;
+}
+.card.col-md-12 .card-body .card-title {
+    color: #FAAA8C;
+}
+.card.col-md-12 .card-body .btn.btn-primary {
+    color: #014E62;
+    background-color: #FAAA8C;
+}
+.card.col-md-12 .card-body .btn.btn-primary {
+    background-color: #014E62;
+    color: #FFFFFF;
+}
+.card.col-md-4.col-lg-12 .card-body .btn.btn-primary {
+    background-color: #014E62;
+    color: #FFFFFF;
+}
+.card.col-md-4.col-lg-12 .card-body .card-title {
+    color: #FAAA8C;
+}
+
+
 
 .client_section {
   background-image: url(../images/hero-bg.jpg);
@@ -853,6 +887,7 @@ a:focus {
   min-height: 100%;
   padding: 20px;
 }
+
 
 
 
