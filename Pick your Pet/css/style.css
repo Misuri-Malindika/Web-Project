@@ -5,10 +5,7 @@ body {
   background-color: #ffffff;
 }
 
-.layout_padding {
-  padding-top: 120px;
-  padding-bottom: 120px;
-}
+
 
 .layout_padding2 {
   padding-top: 45px;
@@ -995,12 +992,68 @@ h2.active {
   color: #ffffff;
   margin: 0;
   padding: 25px 0 20px 0;
-  margin: 0 auto;
-  text-align: center;
+   text-align: center;
 }
 
 .footer_section a {
   color: #ffffff;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 30px;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    width: 600px;
+    margin: 0 auto;
+}
+
+fieldset {
+    border: 2px solid #FAAA8C;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+legend {
+    color: #FAAA8C;
+    font-weight: bold;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: inline-block;
+    width: 120px;
+    color: #FAAA8C;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+textarea {
+    width: 300px;
+    padding: 5px;
+    font-size: 14px;
+}
+
+input[type="submit"] {
+    background-color: #FAAA8C;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #FF7F50;
 }
 
 /* end footer section*/
