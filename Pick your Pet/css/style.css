@@ -5,7 +5,10 @@ body {
   background-color: #ffffff;
 }
 
-
+.layout_padding {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
 
 .layout_padding2 {
   padding-top: 45px;
@@ -280,6 +283,29 @@ a:focus {
 
 /*end_Login/register*/
 
+
+.login-container {
+  margin-top: 20px;
+}
+.login-form-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 9999;
+}
+.login-form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+}
 
 .custom_menu-btn {
   z-index: 9;
@@ -696,40 +722,6 @@ a:focus {
 }
 
 
-.card.col-md-12 .card-body .btn.btn-primary {
-    background-color: #014E62;
-}
-.card.col-md-12 .card-body .btn.btn-primary {
-    background-color: #000000;
-    color: #F4CB0B;
-}
-.card.col-md-4.col-lg-12 .card-body .btn.btn-primary {
-    background-color: #000000;
-    color: #FAC909;
-}
-.sub_page h3 b {
-    color: #014E62;
-}
-.card.col-md-12 .card-body .card-title {
-    color: #FAAA8C;
-}
-.card.col-md-12 .card-body .btn.btn-primary {
-    color: #014E62;
-    background-color: #FAAA8C;
-}
-.card.col-md-12 .card-body .btn.btn-primary {
-    background-color: #014E62;
-    color: #FFFFFF;
-}
-.card.col-md-4.col-lg-12 .card-body .btn.btn-primary {
-    background-color: #014E62;
-    color: #FFFFFF;
-}
-.card.col-md-4.col-lg-12 .card-body .card-title {
-    color: #FAAA8C;
-}
-
-
 
 .client_section {
   background-image: url(../images/hero-bg.jpg);
@@ -891,7 +883,6 @@ a:focus {
 
 
 
-
 /* TABS */
 
 h2.inactive {
@@ -1008,6 +999,206 @@ h2.active {
 
 /*User Log in*/
 
+/* Contact Us*/
+.linkbutton a{
+  font-weight: bold;
+  color: whitesmoke;
+  font-size:20px;
+}
+
+.linkbutton{
+  background-color: #0b8ffe;
+  border-radius: 50px;
+}
+
+.cusection .body{
+  background-image:url(/images/pet.jpg);
+}
+
+
+
+.cusection {
+
+  position: relative;
+  text-align: center;
+
+}
+.cusection img {
+  min-width: 100%;
+  min-height: 100%;
+
+}
+.cusection .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  padding-top: 80px;
+   background-color: rgba(0, 32, 60, 0.44);
+}
+.cusection .overlay h2 {
+text-transform: uppercase;
+font-size: 35px
+}
+.cusection .overlay p {
+  color: #cccccc !important;
+}
+.cusection .overlay .social {
+  margin-top: 40px;
+  
+}
+.cusection .overlay .social i {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  border: 1px solid #cccccc;
+  line-height: 55px;
+  font-size: 25px;
+  transition: .5s ease;
+  margin-right: 5px;
+}
+.cusection .overlay .social i:last-child {
+  margin-right: 0;
+}
+.cusection .overlay .social i:hover {
+  border-color: #0b8ffe;
+  cursor: pointer;
+  box-shadow: 0 0 20px #0b8ffe;
+  transform: scale(1.2)
+}
+.cusection .overlay form {
+  width: 80%;
+  margin: 60px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
+}
+.cusection .overlay form input {
+  height: 40px;
+  background-color: transparent;
+  padding: 5px 0px;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 30px;
+color: #fff;
+}
+.cusection .overlay form textarea {
+  background-color: transparent;
+  padding: 5px 0px;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 30px;
+  height: 40px;
+  width: 100%;
+color: #fff;
+}
+.cusection .overlay form input:focus,.cusection .overlay form textarea:focus {
+  border-bottom-color: #0b8ffe;
+  box-shadow: 0px 0px 20px rgba(11, 143, 254, 0.42);
+}
+.cusection .overlay form input::-webkit-input-placeholder,
+.cusection .overlay form textarea::-webkit-input-placeholder {
+  color: #e8e8e8;
+  text-transform: capitalize;
+}
+.cusection .overlay form [name="name"],
+.cusection .overlay form [name="email"],
+.cusection .overlay form [name="phone"] {
+  width: 31%;
+}
+.cusection .overlay form [name="website"],
+.cusection .overlay form [name="subject"] {
+  width: 48%;
+  margin-bottom: 80px;
+}
+.cusection .overlay form button {
+  background-color: transparent;
+  padding: 10px 0;
+  width: 100%;
+  border: 1px solid #ccc;
+  color: #fff;
+  text-transform: uppercase;
+  transition: 1s ease;
+  overflow: hidden;
+}
+.cusection .overlay form button:hover {
+  color: #0b8ffe;
+  border-color: #0b8ffe;
+  box-shadow: 0 0 20px #0b8ffe;
+cursor: pointer
+}
+.cusection .overlay form button:hover div {
+ /* transform: rotate(-422deg) scale(1.5, 1.5) translate(50%, 50px);*/
+  transform: scale(2) translateX(200px);
+  transition: 1s ease-in-out;
+  color: transparent;
+}
+
+/* ----------- start media query for video & contact ----*/
+
+
+
+
+@media only screen and (max-width: 575px) {
+  .cusection .overlay {
+      padding-top: 40px;
+  }
+  .cusection .overlay .social {
+      margin-top: 30px;        
+      
+  }
+  .cusection .overlay .social i {
+      width: 40px;
+      height: 40px;
+      font-size: 20px;
+      line-height: 40px;
+  }
+  .cusection .overlay form {
+      width: 90%;
+      margin: 40px auto 0;
+      flex-direction: column;
+      align-items: center;
+  }
+  .cusection .overlay form input {
+      width: 95% !important;
+      margin-bottom: 15px !important;
+  }
+  .cusection .overlay form textarea {
+      width: 95%;
+      margin-top: 15px;
+  }
+  .cusection .overlay form button {
+      width: 95%;
+  }
+}
+
+
+@media (min-width: 576px) and (max-width: 991px) {
+  
+  .cusection .overlay form {
+      width: 90%;
+      margin: 60px auto 0;
+  }
+  .cusection .overlay form [name="name"],
+  .cusection .overlay form [name="email"] {
+      width: 48%;
+  }
+  .cusection .overlay form [name="phone"],
+  .cusection .overlay form [name="website"] {
+      width: 48%;
+      margin-bottom: 30px;
+  }
+  .cusection .overlay form [name="subject"] {
+      width: 100%;
+  }
+  
+}
+
+/* End Contact US */
+
 /* footer section*/
 .footer_section {
   display: -webkit-box;
@@ -1027,75 +1218,12 @@ h2.active {
   color: #ffffff;
   margin: 0;
   padding: 25px 0 20px 0;
-   text-align: center;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .footer_section a {
   color: #ffffff;
-}
-body {
-    font-family: Arial, sans-serif;
-    margin: 30px;
-}
-
-h1 {
-    text-align: center;
-}
-
-form {
-    width: 600px;
-    margin: 0 auto;
-}
-
-fieldset {
-    border: 2px solid #FAAA8C;
-    padding: 15px;
-    margin-bottom: 20px;
-}
-
-legend {
-    color: #FAAA8C;
-    font-weight: bold;
-}
-
-.form-group {
-    margin-bottom: 15px;
-}
-
-label {
-    display: inline-block;
-    width: 120px;
-    color: #FAAA8C;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-input[type="number"],
-textarea {
-    width: 300px;
-    padding: 5px;
-    font-size: 14px;
-}
-
-input[type="submit"] {
-    background-color: #FAAA8C;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-input[type="submit"]:hover {
-    background-color: #FF7F50;
-}
-.about-backgound {
-  background-image: url("https://cdn.pixabay.com/photo/2017/08/07/18/57/dog-2606759_1280.jpg");
-  background-position: center;
-  height: 80%;
-  background-repeat: no-repeat;
-  margin-bottom: 2rem;
 }
 
 /* end footer section*/
