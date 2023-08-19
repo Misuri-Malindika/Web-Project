@@ -9,7 +9,7 @@ $FName =$_POST['FName'];
   $Experience =$_POST['Experience'];
 
 
-$conn = new mysqli('localhost', 'root', '', 'petshop1');
+$conn = new mysqli('localhost', 'id21085883_root', 'Petshop@2023', 'id21085883_petshop');
 
 if ($conn->connect_error){
     die("connection failed: " .$conn->connect_error);
@@ -20,7 +20,7 @@ if ($conn->connect_error){
     VALUES (?, ?, ?, ?, ?, ?, ?)");
     $stmt->bind_param("sssssss", $FName, $Email, $Phone, $Address, $City, $PetCode, $Experience);
     $stmt->execute();
-    echo "Registration Successfully";
+    echo "Application Submitted Successfully!";
     $stmt->close();
     $conn->close();
 }
