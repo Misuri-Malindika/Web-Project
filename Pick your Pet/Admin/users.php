@@ -36,7 +36,7 @@
     $db_name = "id21085883_petshop";
 
 
-    $conn = new mysqli('localhost', 'root', '', 'petshop1');
+$conn = new mysqli('localhost', 'id21085883_root', 'Petshop@2023', 'id21085883_petshop');
 
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
