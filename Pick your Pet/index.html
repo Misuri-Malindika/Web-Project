@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 
@@ -44,9 +45,15 @@
             <!--Login Register button-->
             
               <div class="login-container">
-                <a href="#login-form">
-                    <button type="submit">Login</button>
-                  </a>
+                      <?php
+                      session_start();
+
+                      if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
+                          echo '<a href="PHP/logout.php"><button type="button">Logout</button></a>';
+                      } else {
+                          echo '<a href="#login-form"><button type="button">Login</button></a>';
+                      }
+                      ?>
                   <a href="#register-form">
                     <button type="submit" id="reg">Register</button>
                   </a>
